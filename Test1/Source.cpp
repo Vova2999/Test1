@@ -19,6 +19,7 @@ void main()
 		system("cls");
 
 		cout << "1. Вывести массив" << endl;
+		cout << "2. Вывести массив с индексами" << endl;
 		cout << "0. Выход" << endl;
 
 		int input;
@@ -33,6 +34,11 @@ void main()
 			for (int i = 0; i < size; i++)
 				cout << arr[i] << " ";
 			cout << endl;
+			system("pause");
+
+		case 2:
+			for (int i = 0; i < size; i++)
+				cout << "[" << i << "]: " << arr[i] << endl;
 			system("pause");
 		}
 	}
