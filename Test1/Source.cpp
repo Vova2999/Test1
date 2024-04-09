@@ -39,24 +39,30 @@ void main()
 				cout << arr[i] << " ";
 			cout << endl;
 			system("pause");
+
 			break;
 
 		case 2:
 			for (int i = 0; i < size; i++)
 				cout << "[" << i << "]: " << arr[i] << endl;
 			system("pause");
+
 			break;
+
 		case 3:
 			sort(arr, arr + size);
+
 			break;
 
 		case 4:
 			sort(arr, arr + size, [](int a, int b) { return a > b; });
+
 			break;
 
 		case 5:
 			for (int i = 0; i < size; i++)
 				arr[i] = rand() % 10;
+
 			break;
 		}
 	}
